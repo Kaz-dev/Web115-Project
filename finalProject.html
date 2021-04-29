@@ -3,10 +3,42 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>WEB-115 Final Project</title>
+	<link rel="stylesheet" href="projectStyle.css">
 </head>
 <body>
-<div class="banner">
-	<img class='mainBanner' src="banner.png" alt='custom_html_banner' width='1200' horizontal-align:middle">
+<script type='text/javascript'src='projectJS.js'></script>
+<div class='banner'>
+	<div class='banner__img'>
+		<img class='mainBanner' src='banner.png' alt='custom_html_banner' width='1200'>
+	</div>
 </div>
+<br>
+<div class='body'>
+	<form action="/action_page.php">
+		<label for="name">Enter your full name</label><br>
+		<input type="text" id="name" name="name" value=""><br>
+		<label for="pnum">Enter your phone number</label><br>
+		<input type="text" id="pnum" name="pnum" value=""><br>
+		<label for="city">Enter your city</label><br>
+		<input type="text" id="city" name="city" value=""><br>
+		<label for="state">Enter your state</label><br>
+		<input type="text" id="state" name="state" value=""><br><br>
+		<label for="val">Enter your </label><br>
+		<input type="text" id="val" name="val" value=""><br>
+		<label for="email">Enter your email address</label><br>
+		<input type="text" id="email" name="email" value=""><br>
+		
+		<p>etc.</p><br>
+		
+		<p>Enter last job dates</p>
+		
+		<label for="sdate">Start Date:</label><br>
+		<input type="date" id="sdate" name="sdate" value=""><br>
+		<label for="edate">End Date:</label><br>
+		<input type="date" id="edate" name="edate" value=""><br><br>
+		
+		<input type="submit" value="Create Resume" onclick='build()'>
+	</form>
+</div> 
 </body>
 </html>
